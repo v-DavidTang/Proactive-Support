@@ -1,0 +1,12 @@
+1. connect Azure AD
+
+$msolcred = Get-Credential
+Connect-MsolService -Credential $msolcred
+
+2. Get-MsolUser
+
+3. Set-MsolUser -UserPrincipalName <user PrincipalName> -PasswordNeverExpires $true
+
+4. Check the PasswordNeverExpire success or not
+
+Get-MsolUser -UserPrincipalName <user ID> | Select PasswordNeverExpires

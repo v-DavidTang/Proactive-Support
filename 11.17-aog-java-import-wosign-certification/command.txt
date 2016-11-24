@@ -1,0 +1,1 @@
+keytool -keystore "C:\Program Files\Java\jdk1.8.0_71\jre\lib\security\cacerts" -importcert -alias WoSign -file WS_CA1_NEW.cer

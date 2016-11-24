@@ -1,0 +1,7 @@
+1. confirm the local PowerShell version
+
+Get-Module -ListAvailable -Name <module name> | Select Version
+
+2. PowerShell resource manager module default path : C:\Program Files (x86)\Microsoft SDKs\Azure\PowerShell\ResourceManager\AzureResourceManager  
+
+3. In Classic Manager Portal click automation-automation account-property-import module, select the *.zip file to import.
