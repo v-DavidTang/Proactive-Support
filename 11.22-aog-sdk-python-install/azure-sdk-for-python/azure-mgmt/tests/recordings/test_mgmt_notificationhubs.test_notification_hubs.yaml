@@ -1,0 +1,65 @@
+interactions:
+- request:
+    body: !!python/unicode '{"location": "westus"}'
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['22']
+      Content-Type: [application/json; charset=utf-8]
+      User-Agent: [python/2.7.11 (Windows-10-10.0.14393) requests/2.11.1 msrest/0.4.4
+          msrest_azure/0.4.3 resourcemanagementclient/0.30.0rc6 Azure-SDK-For-Python]
+      accept-language: [en-US]
+      x-ms-client-request-id: [834c61cf-81df-11e6-bc33-ecb1d756380e]
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/test_mgmt_notificationhubs_test_notification_hubsfdb71452?api-version=2016-02-01
+  response:
+    body: {string: !!python/unicode '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_notificationhubs_test_notification_hubsfdb71452","name":"test_mgmt_notificationhubs_test_notification_hubsfdb71452","location":"westus","properties":{"provisioningState":"Succeeded"}}'}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['267']
+      content-type: [application/json; charset=utf-8]
+      date: ['Fri, 23 Sep 2016 22:46:05 GMT']
+      expires: ['-1']
+      pragma: [no-cache]
+      strict-transport-security: [max-age=31536000; includeSubDomains]
+      x-ms-correlation-request-id: [0ccfa0ca-556a-4b4a-91ee-25d40863195d]
+      x-ms-ratelimit-remaining-subscription-writes: ['1199']
+      x-ms-request-id: [0ccfa0ca-556a-4b4a-91ee-25d40863195d]
+      x-ms-routing-request-id: ['WESTUS2:20160923T224606Z:0ccfa0ca-556a-4b4a-91ee-25d40863195d']
+    status: {code: 201, message: Created}
+- request:
+    body: !!python/unicode '{"name": "pyarmnotificationhubsfdb71452", "location":
+      "westus"}'
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['63']
+      Content-Type: [application/json; charset=utf-8]
+      User-Agent: [python/2.7.11 (Windows-10-10.0.14393) requests/2.11.1 msrest/0.4.4
+          msrest_azure/0.4.3 notificationhubsmanagementclient/0.30.0rc6 Azure-SDK-For-Python]
+      accept-language: [en-US]
+      x-ms-client-request-id: [83a4bb00-81df-11e6-aefb-ecb1d756380e]
+    method: POST
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.NotificationHubs/checkNamespaceAvailability?api-version=2016-03-01
+  response:
+    body: {string: !!python/unicode '{"isAvailiable":true,"id":"/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.NotificationHubs/checkNamespaceAvailability","name":"pyarmnotificationhubsfdb71452","type":"Microsoft.NotificationHubs/namespaces/checkNamespaceAvailability","location":null,"tags":null,"properties":true}'}
+    headers:
+      cache-control: [no-cache]
+      content-length: ['303']
+      content-type: [application/json; charset=utf-8]
+      date: ['Fri, 23 Sep 2016 22:46:06 GMT']
+      expires: ['-1']
+      pragma: [no-cache]
+      server: [Service-Bus-Resource-Provider/SN1, Microsoft-HTTPAPI/2.0]
+      server-sb: [Service-Bus-Resource-Provider/SN1]
+      strict-transport-security: [max-age=31536000; includeSubDomains]
+      transfer-encoding: [chunked]
+      vary: [Accept-Encoding]
+      x-ms-correlation-request-id: [2e8a0135-26ca-4572-afcd-d0c6502ad28f]
+      x-ms-ratelimit-remaining-subscription-reads: ['14999']
+      x-ms-request-id: [19a37fa9-07a6-4445-9947-5fa35186e128_M5_M5]
+      x-ms-routing-request-id: ['WESTUS2:20160923T224606Z:2e8a0135-26ca-4572-afcd-d0c6502ad28f']
+    status: {code: 200, message: OK}
+version: 1

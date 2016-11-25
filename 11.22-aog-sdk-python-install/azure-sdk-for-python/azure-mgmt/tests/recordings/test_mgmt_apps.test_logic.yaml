@@ -1,0 +1,63 @@
+interactions:
+- request:
+    body: '{"location": "westus"}'
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['22']
+      Content-Type: [application/json; charset=utf-8]
+      User-Agent: [python/3.5.1 (Windows-10-10.0.14393-SP0) requests/2.11.0 msrest/0.4.1
+          msrest_azure/0.4.1 resourcemanagementclient/0.30.0rc6 Azure-SDK-For-Python]
+      accept-language: [en-US]
+      x-ms-client-request-id: [f42648e8-6ed4-11e6-ba5e-ecb1d756380e]
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/test_mgmt_apps_test_logic86a60a43?api-version=2016-02-01
+  response:
+    body: {string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_apps_test_logic86a60a43","name":"test_mgmt_apps_test_logic86a60a43","location":"westus","properties":{"provisioningState":"Succeeded"}}'}
+    headers:
+      Cache-Control: [no-cache]
+      Content-Length: ['219']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 30 Aug 2016 17:12:39 GMT']
+      Expires: ['-1']
+      Pragma: [no-cache]
+      Strict-Transport-Security: [max-age=31536000; includeSubDomains]
+      x-ms-correlation-request-id: [50976ac8-2a91-49ef-ba7d-4cf872ddc756]
+      x-ms-ratelimit-remaining-subscription-writes: ['1198']
+      x-ms-request-id: [50976ac8-2a91-49ef-ba7d-4cf872ddc756]
+      x-ms-routing-request-id: ['CENTRALUS:20160830T171240Z:50976ac8-2a91-49ef-ba7d-4cf872ddc756']
+    status: {code: 201, message: Created}
+- request:
+    body: '{"properties": {"definition": {"$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "outputs": {}, "contentVersion": "1.0.0.0", "parameters": {}, "triggers": {},
+      "actions": {}}}, "location": "West US"}'
+    headers:
+      Accept: [application/json]
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['268']
+      Content-Type: [application/json; charset=utf-8]
+      User-Agent: [python/3.5.1 (Windows-10-10.0.14393-SP0) requests/2.11.0 msrest/0.4.1
+          msrest_azure/0.4.1 logicmanagementclient/1.0.0 Azure-SDK-For-Python]
+      accept-language: [en-US]
+      x-ms-client-request-id: [f4e2f19a-6ed4-11e6-b7ac-ecb1d756380e]
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_apps_test_logic86a60a43/providers/Microsoft.Logic/workflows/12HourHeartBeat?api-version=2016-06-01
+  response:
+    body: {string: '{"properties":{"provisioningState":"Succeeded","createdTime":"2016-08-30T17:12:41.0076894Z","changedTime":"2016-08-30T17:12:41.0076894Z","state":"Enabled","version":"08587290297245768664","accessEndpoint":"https://prod-14.westus.logic.azure.com:443/workflows/58048da9717142a493e48e654a757eda","definition":{"$schema":"https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#","contentVersion":"1.0.0.0","parameters":{},"triggers":{},"actions":{},"outputs":{}},"parameters":{}},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/test_mgmt_apps_test_logic86a60a43/providers/Microsoft.Logic/workflows/12HourHeartBeat","name":"12HourHeartBeat","type":"Microsoft.Logic/workflows","location":"West
+        US"}'}
+    headers:
+      Cache-Control: [no-cache]
+      Content-Length: ['767']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 30 Aug 2016 17:12:40 GMT']
+      Expires: ['-1']
+      Pragma: [no-cache]
+      Strict-Transport-Security: [max-age=31536000; includeSubDomains]
+      x-ms-correlation-request-id: [e1796ac0-ca4f-4970-9a4b-73bad19448fd]
+      x-ms-ratelimit-remaining-subscription-writes: ['1197']
+      x-ms-request-id: ['westus:6dcd77fb-11e7-4587-bc39-76fe480b0647']
+      x-ms-routing-request-id: ['CENTRALUS:20160830T171241Z:e1796ac0-ca4f-4970-9a4b-73bad19448fd']
+    status: {code: 201, message: Created}
+version: 1
