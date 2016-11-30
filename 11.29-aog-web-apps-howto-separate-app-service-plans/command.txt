@@ -1,0 +1,354 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\windows\system32> Login-AzureRmAccount -EnvironmentName "AzureChinaCloud"
+
+
+Environment           : AzureChinaCloud
+Account               : v-tawe@mccomm.partner.onmschina.cn
+TenantId              : dba87c18-acb1-4346-bbe1-3f2f0f97eec8
+SubscriptionId        : 3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d
+SubscriptionName      : Windows Azure Enterprise Trial
+CurrentStorageAccount :
+
+
+
+PS C:\windows\system32> New-AzureRmAppServicePlan -Location ChinaEast -Name "davidAppServicePlan" -ResourceGroupName "da
+vidResourceGroup" -Tier Standard
+New-AzureRmAppServicePlan : Resource group 'davidResourceGroup' could not be found.
+At line:1 char:1
++ New-AzureRmAppServicePlan -Location ChinaEast -Name "davidAppServiceP ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [New-AzureRmAppServicePlan], CloudException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.WebApps.Cmdlets.AppServicePlans.NewAzureAppServicePlanCmdlet
+
+PS C:\windows\system32> New-AzureResourceGroupName
+New-AzureResourceGroupName : The term 'New-AzureResourceGroupName' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the
+path is correct and try again.
+At line:1 char:1
++ New-AzureResourceGroupName
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (New-AzureResourceGroupName:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\windows\system32> New-AzureRmResourceGroupName
+New-AzureRmResourceGroupName : The term 'New-AzureRmResourceGroupName' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the
+path is correct and try again.
+At line:1 char:1
++ New-AzureRmResourceGroupName
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (New-AzureRmResourceGroupName:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\windows\system32> New-AzureRmResourceGroup
+
+cmdlet New-AzureRmResourceGroup at command pipeline position 1
+Supply values for the following parameters:
+(Type !? for Help.)
+Name: davidResourceGroup
+Location: China East
+
+
+ResourceGroupName : davidResourceGroup
+Location          : chinaeast
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup
+
+
+
+PS C:\windows\system32> New-AzureRmAppServicePlan -Location ChinaEast -Name "davidAppServicePlan" -ResourceGroupName "da
+vidResourceGroup" -Tier Standard
+
+
+Sku                       : Microsoft.Azure.Management.WebSites.Models.SkuDescription
+ServerFarmWithRichSkuName : davidAppServicePlan
+WorkerTierName            :
+Status                    : Ready
+Subscription              : 3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d
+AdminSiteName             :
+HostingEnvironmentProfile :
+MaximumNumberOfWorkers    : 10
+GeoRegion                 : China East
+PerSiteScaling            : False
+NumberOfSites             : 0
+ResourceGroup             : davidResourceGroup
+Id                        : /subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup/provi
+                            ders/Microsoft.Web/serverfarms/davidAppServicePlan
+Name                      : davidAppServicePlan
+Location                  : China East
+Type                      : Microsoft.Web/serverfarms
+Tags                      :
+
+
+
+PS C:\windows\system32> $ApsID = /subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup/p
+roviders/Microsoft.Web/serverfarms/davidAppServicePlan
+/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup/providers/Microsoft.Web/serverfar
+ms/davidAppServicePlan : The term '/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGrou
+p/providers/Microsoft.Web/serverfarms/davidAppServicePlan' is not recognized as the name of a cmdlet, function, script
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct
+and try again.
+At line:1 char:10
++ $ApsID = /subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resource ...
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (/subscriptions/...dAppServicePlan:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\windows\system32> $ApsID = "/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup/
+providers/Microsoft.Web/serverfarms/davidAppServicePlan"
+PS C:\windows\system32> Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Microsoft.Websites -Propertie
+s @{"serverFarmID"=$ApsID} -ResourceGroupName david
+
+Confirm
+Are you sure you want to update the following resource:
+/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/david/providers/Microsoft.Websites
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
+Set-AzureRmResource : The pipeline has been stopped.
+At line:1 char:1
++ Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Mi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmResource], PipelineStoppedException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.SetAzureResourceCmdlet
+
+Set-AzureRmResource : {"message":"No HTTP resource was found that matches the request URI 'https://management.chinaclou
+dapi.cn/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/david/providers/Microsoft.Websites?api-versio
+n=2015-01-01'."}
+At line:1 char:1
++ Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Mi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmResource], ErrorResponseMessageException
+    + FullyQualifiedErrorId : NotFound,Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.SetAzureResourc
+   eCmdlet
+
+PS C:\windows\system32> Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Microsoft.Websites -Propertie
+s @{"serverFarmID"=$ApsID} -ResourceGroupName davidtestarm
+
+Confirm
+Are you sure you want to update the following resource:
+/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidtestarm/providers/Microsoft.Websites
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
+Set-AzureRmResource : The pipeline has been stopped.
+At line:1 char:1
++ Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Mi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmResource], PipelineStoppedException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.SetAzureResourceCmdlet
+
+Set-AzureRmResource : {"message":"No HTTP resource was found that matches the request URI 'https://management.chinaclou
+dapi.cn/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidtestarm/providers/Microsoft.Websites?api
+-version=2015-01-01'."}
+At line:1 char:1
++ Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Mi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmResource], ErrorResponseMessageException
+    + FullyQualifiedErrorId : NotFound,Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.SetAzureResourc
+   eCmdlet
+
+PS C:\windows\system32> Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Microsoft.Websites -Propertie
+s @{"serverFarmID"="/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup/providers/Micr
+osoft.Web/serverfarms/davidAppServicePlan"} -ResourceGroupName davidtestarm
+
+Confirm
+Are you sure you want to update the following resource:
+/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidtestarm/providers/Microsoft.Websites
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
+Set-AzureRmResource : The pipeline has been stopped.
+At line:1 char:1
++ Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Mi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmResource], PipelineStoppedException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.SetAzureResourceCmdlet
+
+Set-AzureRmResource : {"message":"No HTTP resource was found that matches the request URI 'https://management.chinaclou
+dapi.cn/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidtestarm/providers/Microsoft.Websites?api
+-version=2015-01-01'."}
+At line:1 char:1
++ Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Mi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmResource], ErrorResponseMessageException
+    + FullyQualifiedErrorId : NotFound,Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.SetAzureResourc
+   eCmdlet
+
+PS C:\windows\system32> Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Microsoft.Web/sites -Properti
+es @{"serverFarmID"="/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup/providers/Mic
+rosoft.Web/serverfarms/davidAppServicePlan"} -ResourceGroupName davidtestarm
+
+Confirm
+Are you sure you want to update the following resource:
+/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidtestarm/providers/Microsoft.Web/sites/davidweba
+ppstest
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
+Set-AzureRmResource : The pipeline has been stopped.
+At line:1 char:1
++ Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Mi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmResource], PipelineStoppedException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.SetAzureResourceCmdlet
+
+Set-AzureRmResource : {"Code":"Conflict","Message":"Cannot change the site davidwebappstest to the App Service Plan
+davidAppServicePlan due to hosting constraints.","Target":null,"Details":[{"Message":"Cannot change the site
+davidwebappstest to the App Service Plan davidAppServicePlan due to hosting
+constraints."},{"Code":"Conflict"},{"ErrorEntity":{"Code":"Conflict","Message":"Cannot change the site
+davidwebappstest to the App Service Plan davidAppServicePlan due to hosting
+constraints.","ExtendedCode":"59602","MessageTemplate":"Cannot change the site {0} to the App Service Plan {1} due to
+hosting constraints.","Parameters":["davidwebappstest","davidAppServicePlan"],"InnerErrors":null}}],"Innererror":null}
+At line:1 char:1
++ Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Mi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmResource], ErrorResponseMessageException
+    + FullyQualifiedErrorId : Conflict,Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.SetAzureResourc
+   eCmdlet
+
+PS C:\windows\system32> New-AzureRmAppServicePlan -Location ChinaEast -Name "davidAppServicePlan2" -ResourceGroupName "davidResou
+rceGroup" -Tier Standard
+
+
+Sku                       : Microsoft.Azure.Management.WebSites.Models.SkuDescription
+ServerFarmWithRichSkuName : davidAppServicePlan2
+WorkerTierName            :
+Status                    : Ready
+Subscription              : 3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d
+AdminSiteName             :
+HostingEnvironmentProfile :
+MaximumNumberOfWorkers    : 10
+GeoRegion                 : China East
+PerSiteScaling            : False
+NumberOfSites             : 0
+ResourceGroup             : davidResourceGroup
+Id                        : /subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup/providers/Micr
+                            osoft.Web/serverfarms/davidAppServicePlan2
+Name                      : davidAppServicePlan2
+Location                  : China East
+Type                      : Microsoft.Web/serverfarms
+Tags                      :
+
+
+
+PS C:\windows\system32> Get-AzueRmAppserServicePlan
+Get-AzueRmAppserServicePlan : The term 'Get-AzueRmAppserServicePlan' is not recognized as the name of a cmdlet, function,
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct
+and try again.
+At line:1 char:1
++ Get-AzueRmAppserServicePlan
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-AzueRmAppserServicePlan:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\windows\system32> Get-AzureRmAppserServicePlan
+Get-AzureRmAppserServicePlan : The term 'Get-AzureRmAppserServicePlan' is not recognized as the name of a cmdlet, function,
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct
+and try again.
+At line:1 char:1
++ Get-AzureRmAppserServicePlan
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-AzureRmAppserServicePlan:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\windows\system32> Get-AzureRmAppServicePlan
+
+
+Sku                       : Microsoft.Azure.Management.WebSites.Models.SkuDescription
+ServerFarmWithRichSkuName : davidAppServicePlan
+WorkerTierName            :
+Status                    : Ready
+Subscription              : 3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d
+AdminSiteName             :
+HostingEnvironmentProfile :
+MaximumNumberOfWorkers    : 1
+GeoRegion                 : China East
+PerSiteScaling            : False
+NumberOfSites             : 0
+ResourceGroup             : davidResourceGroup
+Id                        : /subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup/providers/Micr
+                            osoft.Web/serverfarms/davidAppServicePlan
+Name                      : davidAppServicePlan
+Location                  : China East
+Type                      : Microsoft.Web/serverfarms
+Tags                      :
+
+Sku                       : Microsoft.Azure.Management.WebSites.Models.SkuDescription
+ServerFarmWithRichSkuName : davidAppServicePlan2
+WorkerTierName            :
+Status                    : Ready
+Subscription              : 3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d
+AdminSiteName             :
+HostingEnvironmentProfile :
+MaximumNumberOfWorkers    : 1
+GeoRegion                 : China East
+PerSiteScaling            : False
+NumberOfSites             : 0
+ResourceGroup             : davidResourceGroup
+Id                        : /subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup/providers/Micr
+                            osoft.Web/serverfarms/davidAppServicePlan2
+Name                      : davidAppServicePlan2
+Location                  : China East
+Type                      : Microsoft.Web/serverfarms
+Tags                      :
+
+Sku                       : Microsoft.Azure.Management.WebSites.Models.SkuDescription
+ServerFarmWithRichSkuName : davidasp
+WorkerTierName            :
+Status                    : Ready
+Subscription              : 3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d
+AdminSiteName             :
+HostingEnvironmentProfile :
+MaximumNumberOfWorkers    : 10
+GeoRegion                 : China North
+PerSiteScaling            : False
+NumberOfSites             : 1
+ResourceGroup             : davidtestarm
+Id                        : /subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidtestarm/providers/Microsoft.
+                            Web/serverfarms/davidasp
+Name                      : davidasp
+Location                  : China North
+Type                      : Microsoft.Web/serverfarms
+Tags                      :
+
+Sku                       : Microsoft.Azure.Management.WebSites.Models.SkuDescription
+ServerFarmWithRichSkuName : Default1
+WorkerTierName            :
+Status                    : Ready
+Subscription              : 3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d
+AdminSiteName             :
+HostingEnvironmentProfile :
+MaximumNumberOfWorkers    : 10
+GeoRegion                 : China East
+PerSiteScaling            : False
+NumberOfSites             : 3
+ResourceGroup             : Default-Web-ChinaEast
+Id                        : /subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/Default-Web-ChinaEast/providers/M
+                            icrosoft.Web/serverfarms/Default1
+Name                      : Default1
+Location                  : China East
+Type                      : Microsoft.Web/serverfarms
+Tags                      :
+
+
+
+PS C:\windows\system32> Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Microsoft.Web/sites -Properties @{"ser
+verFarmID"="/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup/providers/Microsoft.Web/serverf
+arms/davidAppServicePlan"} -ResourceGroupName davidResourceGroup
+
+Confirm
+Are you sure you want to update the following resource:
+/subscriptions/3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d/resourceGroups/davidResourceGroup/providers/Microsoft.Web/sites/davidwebapps
+test
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
+Set-AzureRmResource : The pipeline has been stopped.
+At line:1 char:1
++ Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Mi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmResource], PipelineStoppedException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.SetAzureResourceCmdlet
+
+Set-AzureRmResource : ResourceNotFound : The Resource 'Microsoft.Web/sites/davidwebappstest' under resource group
+'davidResourceGroup' was not found.
+At line:1 char:1
++ Set-AzureRmResource -ResourceName "davidwebappstest" -ResourceType Mi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmResource], ErrorResponseMessageException
+    + FullyQualifiedErrorId : ResourceNotFound,Microsoft.Azure.Commands.ResourceManager.Cmdlets.Implementation.SetAzureResource
+   Cmdlet
