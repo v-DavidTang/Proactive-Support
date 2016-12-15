@@ -1,0 +1,87 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\windows\system32> Get-AzureAccount
+
+Id                                    Type Subscriptions                        Tenants
+--                                    ---- -------------                        -------
+v-tawe@mccomm.partner.onmschina.cn    User 3f3f9851-ee8e-4f0f-8678-bc33d4b45e4d {dba87c18-acb1-4346-bbe1-3f2f0f97eec8}
+davidt@davidtang.partner.onmschina.cn User 8252085e-7499-4cc9-92e1-7264632b87b0 {8f5a9ff2-3459-4c07-95c2-5a7020e1a1da}
+
+
+PS C:\windows\system32> cd "D:\workFolder\Proactive support\Verify Result"
+PS D:\workFolder\Proactive support\Verify Result> cd ".\12.15-aog-load-balancer-powershell-query-asm-settings\"
+PS D:\workFolder\Proactive support\Verify Result\12.15-aog-load-balancer-powershell-query-asm-settings> .\loadbalancer.p
+s1
+-------------------------------
+VMName: davidwindows16
+DNSName: http://davidcloudservice.chinacloudapp.cn/
+
+
+
+LBSetName                : davidLB
+LocalPort                : 8888
+Name                     : davidLB
+Port                     : 8888
+Protocol                 : tcp
+Vip                      : 139.219.229.62
+ProbePath                :
+ProbePort                : 8080
+ProbeProtocol            : tcp
+ProbeIntervalInSeconds   : 10
+ProbeTimeoutInSeconds    : 21
+EnableDirectServerReturn : False
+Acl                      : {}
+InternalLoadBalancerName :
+IdleTimeoutInMinutes     :
+LoadBalancerDistribution :
+VirtualIPName            :
+
+-------------------------------
+VMName: davidtestLB
+DNSName: http://davidwindow2012.chinacloudapp.cn/
+
+LBSetName                : davidLB
+LocalPort                : 3306
+Name                     : davidLB
+Port                     : 3306
+Protocol                 : tcp
+Vip                      : 139.219.194.66
+ProbePath                :
+ProbePort                : 3306
+ProbeProtocol            : tcp
+ProbeIntervalInSeconds   : 100
+ProbeTimeoutInSeconds    : 201
+EnableDirectServerReturn : False
+Acl                      : {}
+InternalLoadBalancerName :
+IdleTimeoutInMinutes     :
+LoadBalancerDistribution :
+VirtualIPName            :
+
+-------------------------------
+VMName: davidwindow2012
+DNSName: http://davidwindow2012.chinacloudapp.cn/
+
+LBSetName                : davidLB
+LocalPort                : 3306
+Name                     : davidLB
+Port                     : 3306
+Protocol                 : tcp
+Vip                      : 139.219.194.66
+ProbePath                :
+ProbePort                : 3306
+ProbeProtocol            : tcp
+ProbeIntervalInSeconds   : 100
+ProbeTimeoutInSeconds    : 201
+EnableDirectServerReturn : False
+Acl                      : {}
+InternalLoadBalancerName :
+IdleTimeoutInMinutes     :
+LoadBalancerDistribution :
+VirtualIPName            :
+
+
+
+PS D:\workFolder\Proactive support\Verify Result\12.15-aog-load-balancer-powershell-query-asm-settings>
+PS D:\workFolder\Proactive support\Verify Result\12.15-aog-load-balancer-powershell-query-asm-settings>
