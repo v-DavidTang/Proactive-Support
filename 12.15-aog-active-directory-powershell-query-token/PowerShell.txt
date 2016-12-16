@@ -1,0 +1,154 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\windows\system32> cd "D:\workFolder\Proactive support\Verify Result\12.15-aog-active-directory-powershell-query-t
+ken"
+PS D:\workFolder\Proactive support\Verify Result\12.15-aog-active-directory-powershell-query-token> .\GetAuthToken.ps1
+
+
+AccessTokenType                : Bearer
+AccessToken                    : eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjNFcmRMazNSeHlKckhFLTVPS3R4b0l3YkRnbyIsIm
+                                 tpZCI6IjNFcmRMazNSeHlKckhFLTVPS3R4b0l3YkRnbyJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLmNoaW5hY2x
+                                 vdWRhcGkuY24iLCJpc3MiOiJodHRwczovL3N0cy5jaGluYWNsb3VkYXBpLmNuLzcxYTkwNGYwLTg0MmMtNDc5O
+                                 S04MDlkLTE1ODZmNDc1Yzk2YS8iLCJpYXQiOjE0ODE4NTA4NDQsIm5iZiI6MTQ4MTg1MDg0NCwiZXhwIjoxNDg
+                                 xODU0NzQ0LCJhY3IiOiIxIiwiYWlvIjoiQUFBQkFBRUFxeHlyNjhleHRrbW1XMllmclE1NmU3eDh5SkdrMnJTV
+                                 WRia1JQTzZPRVJQRWxyUm8yY3BlZ1AtN3RIdk9nYVV1Q1IzdDF5OWNrc05hOXlUOHVPLUw1THBjMDI3STFkSVZ
+                                 rYU5hQ0tDNS1uajNZT0JlN1dKOXlfRkUyRHNnQ1VuMElBQSIsImFsdHNlY2lkIjoiNTo6MjAwMzdGRkU4MTE4O
+                                 TkwQSIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIxOTUwYTI1OC0yMjdiLTRlMzEtYTljZi03MTc0OTU5NDVmYzI
+                                 iLCJhcHBpZGFjciI6IjAiLCJlX2V4cCI6MTA4MDAsImVtYWlsIjoidi10YXdlQG1jY29tbS5wYXJ0bmVyLm9ub
+                                 XNjaGluYS5jbiIsImZhbWlseV9uYW1lIjoiVGFuZyIsImdpdmVuX25hbWUiOiJEYXZpZCIsImlkcCI6Imh0dHB
+                                 zOi8vc3RzLmNoaW5hY2xvdWRhcGkuY24vZGJhODdjMTgtYWNiMS00MzQ2LWJiZTEtM2YyZjBmOTdlZWM4LyIsI
+                                 mlwYWRkciI6IjE2Ny4yMjAuMjU1LjQwIiwibmFtZSI6IkRhdmlkIFRhbmciLCJwbGF0ZiI6IjE0Iiwic2NwIjo
+                                 iNjJlOTAzOTQtNjlmNS00MjM3LTkxOTAtMDEyMTc3MTQ1ZTEwIiwic3ViIjoiaFNYVjVNS01CY2lodDI3R19GT
+                                 E9aYXFHMWNtQ1JnMVBZMG9pUktVa3FHdyIsInRpZCI6IjcxYTkwNGYwLTg0MmMtNDc5OS04MDlkLTE1ODZmNDc
+                                 1Yzk2YSIsInVuaXF1ZV9uYW1lIjoidi10YXdlQG1jY29tbS5wYXJ0bmVyLm9ubXNjaGluYS5jbiIsInZlciI6I
+                                 jEuMCJ9.ZRxjlwMtq_8JGd_LqGgOCK6Ws1N49NFQMie2xb0ysCy0oyZo7K87DDefTz36lh0HSj4UsENF4SGFID
+                                 q_-0Tnw_VBNzotApb7XF2Q4iwWG3TQXlprq2kLnPFnXplkWu7Nuidt6chY7WPlt3ORkVd3-bB_Er3tlF1V3PLM
+                                 -QY6BQuYpf4d6kfnrPUz8vJqI6Lk-Wes5L-sx_vJO35Vi_4CfCyvLuwHmqOeyjmJWMpYo7llrwsiO710_pciEg
+                                 1hDsb-0JnIOp2rmKFxGF1WSPflsiSDZOXAttD_5ctKQ6yhUQtmDnbfTu_wt0k6r4XdRwu-JaxAdcAcbypa5Yms
+                                 1M5K4A
+RefreshToken                   : AAABAAAAqxyr68extkmmW2YfrQ56exwPNTGxqSHF8nSnLpmwDNFo8s6Y_SWmsY8KsbsSlZ0ygt4IR1SuAve1nj
+                                 bFPJ9Z3cFhW44O0PmD22BIyk13_-IDq7feTnMXEI6qgKFJsQgJkJv5w_tclPAYsC2_I5vswycfoFEG2dwrwU6v
+                                 9zuRGOzsVpekWJfUiDYyLEFQhgvV-5KTTdLHRNVROkR_TX8K8swDHOfd0uUdF1X0spYM-x_njQKtEOz1rXgsER
+                                 avv7RbluQChqm0kJzk1b-DlohgZTLQ8xbFp6kGh3108Fv2ZdXFoLHIADDIZfCGf-FZQdRgRMvrJjOfKsDG637a
+                                 YIpE7I3gOVJUkoOeuHXTpfdqrDGavLvAVne7ufmbbRL9z0Z70r1p_st4XZZT0Ulj1geSU3lmj-st_XV5IpxlJM
+                                 WV5cZcDz5Xyf2wTSgvNyH6f2YV69p7QEysgZcZh6c6ybRCxnRu5yQlyDzmhSyesPBfTyLH65W5JPuyH2Z7WJDA
+                                 7GpZp5j1dyzQmhhuaxgIk4WNueqxhzosmJzHkBfHzazNf0ZIdjYWwK-dBt3TE0UwY9OGLHG6OHZJeeZWqC6V4Y
+                                 C9zAz0_5JLAXrZloUHvN6_lH-GT8merNd6N7Z4VbfULuwnyk3u64WvwytuRSUpeQJ6S3fUxo4nqYmfLRHvk6S3
+                                 9q6aHgOUge8tcwNNEpa0nrMXjx32cCTlpOnF5YcxEVVWaWEY5YLA3I3DCu7R0RUzWO6x3dDRkqwR7Ia5nBek-k
+                                 _Ro1IqNu5_djSsZ2aX7Ksj-PApSD05bGGZy4cRm9TnnWQgAA
+ExpiresOn                      : 12/16/2016 2:19:04 AM +00:00
+TenantId                       : 71a904f0-842c-4799-809d-1586f475c96a
+UserInfo                       : Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+IdToken                        : eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIxOTUwYTI1OC0yMjdiLTRlMzEtYTljZi03MTc0OT
+                                 U5NDVmYzIiLCJpc3MiOiJodHRwczovL3N0cy5jaGluYWNsb3VkYXBpLmNuLzcxYTkwNGYwLTg0MmMtNDc5OS04
+                                 MDlkLTE1ODZmNDc1Yzk2YS8iLCJpYXQiOjE0ODE4NTA4NDQsIm5iZiI6MTQ4MTg1MDg0NCwiZXhwIjoxNDgxOD
+                                 U0NzQ0LCJhbHRzZWNpZCI6IjU6OjIwMDM3RkZFODExODk5MEEiLCJhbXIiOlsicHdkIl0sImVtYWlsIjoidi10
+                                 YXdlQG1jY29tbS5wYXJ0bmVyLm9ubXNjaGluYS5jbiIsImZhbWlseV9uYW1lIjoiVGFuZyIsImdpdmVuX25hbW
+                                 UiOiJEYXZpZCIsImlkcCI6Imh0dHBzOi8vc3RzLmNoaW5hY2xvdWRhcGkuY24vZGJhODdjMTgtYWNiMS00MzQ2
+                                 LWJiZTEtM2YyZjBmOTdlZWM4LyIsImlwYWRkciI6IjE2Ny4yMjAuMjU1LjQwIiwibmFtZSI6IkRhdmlkIFRhbm
+                                 ciLCJwbGF0ZiI6IjE0Iiwic3ViIjoiVExnT2tsVDE3WkpyNFNvWHRubnVKRnpIN2U1Zk5GeGcyWDhIWFh6Y1Vu
+                                 NCIsInRpZCI6IjcxYTkwNGYwLTg0MmMtNDc5OS04MDlkLTE1ODZmNDc1Yzk2YSIsInVuaXF1ZV9uYW1lIjoidi
+                                 10YXdlQG1jY29tbS5wYXJ0bmVyLm9ubXNjaGluYS5jbiIsInZlciI6IjEuMCJ9.
+IsMultipleResourceRefreshToken : True
+
+
+
+PS D:\workFolder\Proactive support\Verify Result\12.15-aog-active-directory-powershell-query-token> .\GetAuthToken.ps1
+
+
+AccessTokenType                : Bearer
+AccessToken                    : eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjNFcmRMazNSeHlKckhFLTVPS3R4b0l3YkRnbyIsIm
+                                 tpZCI6IjNFcmRMazNSeHlKckhFLTVPS3R4b0l3YkRnbyJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLmNoaW5hY2x
+                                 vdWRhcGkuY24iLCJpc3MiOiJodHRwczovL3N0cy5jaGluYWNsb3VkYXBpLmNuL2RiYTg3YzE4LWFjYjEtNDM0N
+                                 i1iYmUxLTNmMmYwZjk3ZWVjOC8iLCJpYXQiOjE0ODE4NTEwNzAsIm5iZiI6MTQ4MTg1MTA3MCwiZXhwIjoxNDg
+                                 xODU0OTcwLCJhY3IiOiIxIiwiYW1yIjpbInB3ZCJdLCJhcHBpZCI6IjE5NTBhMjU4LTIyN2ItNGUzMS1hOWNmL
+                                 TcxNzQ5NTk0NWZjMiIsImFwcGlkYWNyIjoiMCIsImVfZXhwIjoxMDgwMCwiZmFtaWx5X25hbWUiOiJUYW5nIiw
+                                 iZ2l2ZW5fbmFtZSI6IkRhdmlkIiwiaXBhZGRyIjoiMTY3LjIyMC4yNTUuNDAiLCJuYW1lIjoiRGF2aWQgVGFuZ
+                                 yIsIm9pZCI6IjViNDZiNzgxLWMzN2UtNGYzMC05ODg3LTBkZGQ3MzZmYTQzMiIsInBsYXRmIjoiMTQiLCJwdWl
+                                 kIjoiMjAwMzdGRkU4MTE4OTkwQSIsInNjcCI6IjYyZTkwMzk0LTY5ZjUtNDIzNy05MTkwLTAxMjE3NzE0NWUxM
+                                 CIsInN1YiI6IklreDJmMHpTYWY5VERzeWdMYUZBdUhvRTdOM1plSmx6U3ZUV1pwTXhIS0EiLCJ0aWQiOiJkYmE
+                                 4N2MxOC1hY2IxLTQzNDYtYmJlMS0zZjJmMGY5N2VlYzgiLCJ1bmlxdWVfbmFtZSI6InYtdGF3ZUBtY2NvbW0uc
+                                 GFydG5lci5vbm1zY2hpbmEuY24iLCJ1cG4iOiJ2LXRhd2VAbWNjb21tLnBhcnRuZXIub25tc2NoaW5hLmNuIiw
+                                 idmVyIjoiMS4wIn0.g9wAlUaVRDz_MgrVS6o_44cFNrPv4Q45TfZfhpG5GHgcYXZdb4rVj51ERiM4_l4EelPbh
+                                 yLADCUE-R5C1BCj_3ue2IJ4vPdPiXywujC-vILJYIKmfbF9VYv2N9bDlA-MZYeZDBmKAmnh2T-cib5vw00sul4
+                                 CDOSixIYljudSTjrGq88G5OugHTv2YgmlHp0Cw-idBR9uV_lgNjMqPAjVjdY0i-kdYFAQg7yF-tj9_iJArgeVl
+                                 NORNHqo0iDqiOD9gCePi2OyNATLi9Ewks79BPsozGOZP2C4neOr-CjHzZosbC7XSlxuQCrf11KAYjxJqzTxmWN
+                                 m9aQ8x9A85Nskfw
+RefreshToken                   : AAABAAAAqxyr68extkmmW2YfrQ56eyVIfx04Bsmk0GYaZ3INCwWW2-U0R4FLd7W9euTPZzSGhnIr3iQR0mvGSJ
+                                 YFoIvmARfl9JvIg5ou_4PunbK3HBNIS9g8saSzr_g7GQ-QW5LdJKLHMf-g2MJPMrBjp0_wAaK1yj5FnEYqqC5g
+                                 w1pd1H2XzfaGM6oYK5pe14OPDCdQ0MvtlllKLu501tj8hsHd57ADLSrXiybdYNB37K4j4Vu97_4drXjSTJOXbt
+                                 ZUYxY_BJ1e1-JxIaH-3AEN4weIsaBFxVw8TYgWIQXx7nn-i5EtVdJ6BGc0r244ydlU7SR2A3T5jl4-JTlD19fm
+                                 aesb4GvHKnwqhPxGsSpTNqaKgcqaCB0KkzD_Fk52hccuUkyCDR1gVlvwo-lDT9HflLQM-B3LasrmrUvPYiFqi5
+                                 U_HRuofSNpwNXP2rcpfChJ2VjwwupBf8X3PlBlOjraTpITqWBQtgAZRyGu8fdZdmtsphm5BIga_s5bom6WIasj
+                                 sxvOOUEt9nDfa_UBis54sEi3rLVWTRbKPvMhlXJl16sA4e7ZtHi1xjGLKdTUvyi4xFaoppR3YttwAu23Wxm2w1
+                                 GU9LfcFeGBY_dTajbopF_0jerdNgz-xrDqRslzYfyvTyEc9uGpOtAFGMKA4hXkqoh8xFLajOgjhvyiaBttL_K-
+                                 HXIMK2X9iIQUu5WD2b5SNaW9IAA
+ExpiresOn                      : 12/16/2016 2:22:50 AM +00:00
+TenantId                       : dba87c18-acb1-4346-bbe1-3f2f0f97eec8
+UserInfo                       : Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+IdToken                        : eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIxOTUwYTI1OC0yMjdiLTRlMzEtYTljZi03MTc0OT
+                                 U5NDVmYzIiLCJpc3MiOiJodHRwczovL3N0cy5jaGluYWNsb3VkYXBpLmNuL2RiYTg3YzE4LWFjYjEtNDM0Ni1i
+                                 YmUxLTNmMmYwZjk3ZWVjOC8iLCJpYXQiOjE0ODE4NTEwNzAsIm5iZiI6MTQ4MTg1MTA3MCwiZXhwIjoxNDgxOD
+                                 U0OTcwLCJhbXIiOlsicHdkIl0sImZhbWlseV9uYW1lIjoiVGFuZyIsImdpdmVuX25hbWUiOiJEYXZpZCIsImlw
+                                 YWRkciI6IjE2Ny4yMjAuMjU1LjQwIiwibmFtZSI6IkRhdmlkIFRhbmciLCJvaWQiOiI1YjQ2Yjc4MS1jMzdlLT
+                                 RmMzAtOTg4Ny0wZGRkNzM2ZmE0MzIiLCJwbGF0ZiI6IjE0Iiwic3ViIjoiZnN0Xzh0djVOQ3VMdG5xRlFjSU5j
+                                 MU9MY05YSjV0eHpYN0g5cEFWcHZFdyIsInRpZCI6ImRiYTg3YzE4LWFjYjEtNDM0Ni1iYmUxLTNmMmYwZjk3ZW
+                                 VjOCIsInVuaXF1ZV9uYW1lIjoidi10YXdlQG1jY29tbS5wYXJ0bmVyLm9ubXNjaGluYS5jbiIsInVwbiI6InYt
+                                 dGF3ZUBtY2NvbW0ucGFydG5lci5vbm1zY2hpbmEuY24iLCJ2ZXIiOiIxLjAifQ.
+IsMultipleResourceRefreshToken : True
+
+
+
+PS D:\workFolder\Proactive support\Verify Result\12.15-aog-active-directory-powershell-query-token> .\GetAuthToken.ps1
+
+
+AccessTokenType                : Bearer
+AccessToken                    : eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjNFcmRMazNSeHlKckhFLTVPS3R4b0l3YkRnbyIsIm
+                                 tpZCI6IjNFcmRMazNSeHlKckhFLTVPS3R4b0l3YkRnbyJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLmNoaW5hY2x
+                                 vdWRhcGkuY24iLCJpc3MiOiJodHRwczovL3N0cy5jaGluYWNsb3VkYXBpLmNuL2U2MWVkYmRlLTZjMTUtNDc5Z
+                                 S05NTAxLTAwY2M3YzNjNGU5YS8iLCJpYXQiOjE0ODE4NTExMDYsIm5iZiI6MTQ4MTg1MTEwNiwiZXhwIjoxNDg
+                                 xODU1MDA2LCJhY3IiOiIxIiwiYWlvIjoiQUFBQkFBRUFxeHlyNjhleHRrbW1XMllmclE1NmUtdGNfV1NiR2xme
+                                 XExZ1paamRpYkdxSGVxdTFKLTdEY1RqT2JrLUhOQnM2dVAxMlpnZnVnZDkxVDUxM3J4WDZ6Zlh5ZkwyNHBubEh
+                                 aVm8xQnpkZndkcXFfLWNJS09acXhCWmNNMFUxNXBDOElBQSIsImFsdHNlY2lkIjoiNTo6MjAwMzdGRkU4MTE4O
+                                 TkwQSIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIxOTUwYTI1OC0yMjdiLTRlMzEtYTljZi03MTc0OTU5NDVmYzI
+                                 iLCJhcHBpZGFjciI6IjAiLCJlX2V4cCI6MTA4MDAsImVtYWlsIjoidi10YXdlQG1jY29tbS5wYXJ0bmVyLm9ub
+                                 XNjaGluYS5jbiIsImZhbWlseV9uYW1lIjoiVGFuZyIsImdpdmVuX25hbWUiOiJEYXZpZCIsImlkcCI6Imh0dHB
+                                 zOi8vc3RzLmNoaW5hY2xvdWRhcGkuY24vZGJhODdjMTgtYWNiMS00MzQ2LWJiZTEtM2YyZjBmOTdlZWM4LyIsI
+                                 mlwYWRkciI6IjE2Ny4yMjAuMjU1LjQwIiwibmFtZSI6IkRhdmlkIFRhbmciLCJwbGF0ZiI6IjE0Iiwic2NwIjo
+                                 iNjJlOTAzOTQtNjlmNS00MjM3LTkxOTAtMDEyMTc3MTQ1ZTEwIiwic3ViIjoiaFNYVjVNS01CY2lodDI3R19GT
+                                 E9aYXFHMWNtQ1JnMVBZMG9pUktVa3FHdyIsInRpZCI6ImU2MWVkYmRlLTZjMTUtNDc5ZS05NTAxLTAwY2M3YzN
+                                 jNGU5YSIsInVuaXF1ZV9uYW1lIjoidi10YXdlQG1jY29tbS5wYXJ0bmVyLm9ubXNjaGluYS5jbiIsInZlciI6I
+                                 jEuMCJ9.O6Lw-8T-QNrhvG9P3PnrQJaZvlNZEaa6u46vavFbpR3Q2qHKzIkfitIvH9k_mVDUgEaoZopJo_9pff
+                                 cNzOqW5hSlfSFBjA5aX8OPcvlqxbwZBeBrjXRr4ldwr47XfD3HN7zyB7nJ-aCyjT5Wa1NJKYQlmu_OvHU_PQtq
+                                 zd45u_TGRYvATO-OZhekOpIWlZUOAD6NRNr2WC3eem1PNXMYDUPlhrY28maKZKSH9Mavqqx-MyeJF-O469QlmT
+                                 kxxlZg87lxFQypvEWaz_DuYGhImHB1UP5zFOlU4bVAnGNDl-7yiT-QW2n-K-grJTFnIREgz49W8WQwgnzWQrUs
+                                 v0MGJA
+RefreshToken                   : AAABAAAAqxyr68extkmmW2YfrQ56e8LiuJhkk2quW-Q40aRfnN-mXn-9GCbQInDfvZjPUASzEI3CNdGLJhzGGN
+                                 7WcpRyin4LLaEQjYpdKCrvAcmA8AyNSTbQCZodbbFER99Ze8wWGKVROZTiV9Y-XJQAZX42uryGcuclgD4IgYat
+                                 VNXsJBRT4DzJ5jIDAccdkbmuJgsC2wV11PiBcRvCzzi-9n95gS1x4myWgJrka8DmMW9ShnAKlcaZ-DsHEVlvB7
+                                 IkjukiDi-psGjZucIgLsqImpGyPk_37v7UPQshusuysYMVX_fGG8Dfn385E3n_iUld4pBKvFs8tX02gpR5rJzx
+                                 H75b3lan-su_59O3DFDlLkHdFdK8ZG4fmiaGzxEPRg6TDHsOgc7aD1RXsU9GWSuinbjwnXB0YSAK7R4SGJ_NQo
+                                 9eJnDyStLFn_CmGS4BlYeZZkYAMmrBEFlxbZbOmyr3H5IOJBZl8h5JaHKzly_wIvpP8NWCobDPglnn5TUexOom
+                                 xZl-BWeZwtPnA2xF_9fEC95VUzK9tUBS14-FU2QF69DZkTJzg7uwPRJpmq_Eh0eXJGo6AEJ7Tt_P-H-kYZvBvc
+                                 MPXo5v2Xt5lPeex4IA5rwQQm57MQi_CSxE0SekIcr7Yg0if97g5BCPzuvCo65bUDyxwrWZktbzPoZGWEyEj2LL
+                                 xmDnBpulg_dSAdrWBQ7TQW5bt6ycWfsOvCIiSqi1g1YqNJ6knx0Xjlayf9mDF-udSwP9X7bE3MnudXMX_eHDPF
+                                 nJRBKMT_Pf2UG9OojQa-zKn2M55R3DSR-Qmt3WKBtQLOMgAA
+ExpiresOn                      : 12/16/2016 2:23:26 AM +00:00
+TenantId                       : e61edbde-6c15-479e-9501-00cc7c3c4e9a
+UserInfo                       : Microsoft.IdentityModel.Clients.ActiveDirectory.UserInfo
+IdToken                        : eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIxOTUwYTI1OC0yMjdiLTRlMzEtYTljZi03MTc0OT
+                                 U5NDVmYzIiLCJpc3MiOiJodHRwczovL3N0cy5jaGluYWNsb3VkYXBpLmNuL2U2MWVkYmRlLTZjMTUtNDc5ZS05
+                                 NTAxLTAwY2M3YzNjNGU5YS8iLCJpYXQiOjE0ODE4NTExMDYsIm5iZiI6MTQ4MTg1MTEwNiwiZXhwIjoxNDgxOD
+                                 U1MDA2LCJhbHRzZWNpZCI6IjU6OjIwMDM3RkZFODExODk5MEEiLCJhbXIiOlsicHdkIl0sImVtYWlsIjoidi10
+                                 YXdlQG1jY29tbS5wYXJ0bmVyLm9ubXNjaGluYS5jbiIsImZhbWlseV9uYW1lIjoiVGFuZyIsImdpdmVuX25hbW
+                                 UiOiJEYXZpZCIsImlkcCI6Imh0dHBzOi8vc3RzLmNoaW5hY2xvdWRhcGkuY24vZGJhODdjMTgtYWNiMS00MzQ2
+                                 LWJiZTEtM2YyZjBmOTdlZWM4LyIsImlwYWRkciI6IjE2Ny4yMjAuMjU1LjQwIiwibmFtZSI6IkRhdmlkIFRhbm
+                                 ciLCJwbGF0ZiI6IjE0Iiwic3ViIjoiVExnT2tsVDE3WkpyNFNvWHRubnVKRnpIN2U1Zk5GeGcyWDhIWFh6Y1Vu
+                                 NCIsInRpZCI6ImU2MWVkYmRlLTZjMTUtNDc5ZS05NTAxLTAwY2M3YzNjNGU5YSIsInVuaXF1ZV9uYW1lIjoidi
+                                 10YXdlQG1jY29tbS5wYXJ0bmVyLm9ubXNjaGluYS5jbiIsInZlciI6IjEuMCJ9.
+IsMultipleResourceRefreshToken : True
+
+
+
+PS D:\workFolder\Proactive support\Verify Result\12.15-aog-active-directory-powershell-query-token>
