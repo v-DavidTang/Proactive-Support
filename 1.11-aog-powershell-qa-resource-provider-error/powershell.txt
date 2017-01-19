@@ -1,0 +1,19 @@
+PS C:\windows\system32> Login-AzureRmAccount -EnvironmentName AzureChinaCloud
+
+
+Environment           : AzureChinaCloud
+Account               : v-tawe@TESTTEST07Dec16t094151.partner.onmschina.cn
+TenantId              : 4a0a46d7-a203-4a54-a458-8b5aeb6f73dc
+SubscriptionId        : b8ea41ab-9b98-43a2-98d8-ae768be2a6f4
+SubscriptionName      : 1RMB Trial Offer
+CurrentStorageAccount :
+
+
+
+PS C:\windows\system32> Register-AzureRmResourceProvider -ProviderNamespace microsoft.classiccompute
+
+
+ProviderNamespace : Microsoft.ClassicCompute
+RegistrationState : Registering
+ResourceTypes     : {domainNames, checkDomainNameAvailability, domainNames/slots, domainNames/slots/roles...}
+Locations         : {China North, China East}

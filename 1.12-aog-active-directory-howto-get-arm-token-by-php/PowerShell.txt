@@ -1,0 +1,163 @@
+PS C:\windows\system32> Set-AzureRmRedisCacheDiagnostics
+
+cmdlet Set-AzureRmRedisCacheDiagnostics at command pipeline position 1
+Supply values for the following parameters:
+(Type !? for Help.)
+ResourceGroupName: redispms01
+Name: redisstpms01
+StorageAccountId: /subscriptions/8e1c9497-3e47-4f59-ab04-943aa4661a7b/resourceGroups/redispms01/providers/Microsoft.Stor
+age/storageAccounts/redis01storagearm
+Set-AzureRmRedisCacheDiagnostics : Resource group 'redispms01' could not be found.
+At line:1 char:1
++ Set-AzureRmRedisCacheDiagnostics
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : CloseError: (:) [Set-AzureRmRedisCacheDiagnostics], CloudException
+    + FullyQualifiedErrorId : Microsoft.Azure.Commands.RedisCache.SetAzureRedisCacheDiagnostics
+
+PS C:\windows\system32> Set-AzureRmContext -SubscriptionId b8ea41ab-9b98-43a2-98d8-ae768be2a6f4
+
+
+Environment           : AzureChinaCloud
+Account               : v-tawe@TESTTEST07Dec16t094151.partner.onmschina.cn
+TenantId              : 4a0a46d7-a203-4a54-a458-8b5aeb6f73dc
+SubscriptionId        : b8ea41ab-9b98-43a2-98d8-ae768be2a6f4
+SubscriptionName      : 1RMB Trial Offer
+CurrentStorageAccount :
+
+
+
+PS C:\windows\system32> $azureAdApplication = New-AzureRmADApplication -DisplayName "exampleapp" -HomePage "https://www.
+contoso.org" -IdentifierUris "https://www.contoso.org/example" -Password "jkl;7890"
+PS C:\windows\system32> $azureAdApplication = New-AzureRmADApplication -DisplayName "exampleapp" -HomePage "https://www.
+contoso.org" -IdentifierUris "https://www.contoso.org/example" -Password "jkl;7890"
+New-AzureRmADApplication : Another object with the same value for property identifierUris already exists.
+At line:1 char:23
++ ... plication = New-AzureRmADApplication -DisplayName "exampleapp" -HomeP ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [New-AzureRmADApplication], Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Azure.Commands.ActiveDirectory.NewAzureADApplicationCommand
+
+PS C:\windows\system32> $azureAdApplication
+PS C:\windows\system32> $azureAdApplication
+PS C:\windows\system32> New-AzureRmADApplication -DisplayName "exampleapp" -HomePage "https://www.contoso.org" -Identifi
+erUris "https://www.contoso.org/example" -Password "123456789"
+New-AzureRmADApplication : Another object with the same value for property identifierUris already exists.
+At line:1 char:1
++ New-AzureRmADApplication -DisplayName "exampleapp" -HomePage "https:/ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [New-AzureRmADApplication], Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Azure.Commands.ActiveDirectory.NewAzureADApplicationCommand
+
+PS C:\windows\system32> New-AzureRmADApplication -DisplayName "davidapp" -HomePage "https://www.contoso.org" -Identifier
+Uris "https://www.contoso.org/example" -Password "123456789"
+New-AzureRmADApplication : Another object with the same value for property identifierUris already exists.
+At line:1 char:1
++ New-AzureRmADApplication -DisplayName "davidapp" -HomePage "https://w ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [New-AzureRmADApplication], Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Azure.Commands.ActiveDirectory.NewAzureADApplicationCommand
+
+PS C:\windows\system32> New-AzureRmADApplication -DisplayName "davidapp" -HomePage "https://www.contoso.org" -Identifier
+Uris "https://www.contoso.org/example2" -Password "123456789"
+
+
+DisplayName             : davidapp
+ObjectId                : b33c132c-2912-4a12-82d5-e73fdafa7188
+IdentifierUris          : {https://www.contoso.org/example2}
+HomePage                : https://www.contoso.org
+Type                    : Application
+ApplicationId           : 51e41aef-45aa-4100-8d85-235431f4cc15
+AvailableToOtherTenants : False
+AppPermissions          :
+ReplyUrls               : {}
+
+
+
+PS C:\windows\system32> $azureAdApplication = New-AzureRmADApplication -DisplayName "davidapp" -HomePage "https://www.co
+ntoso.org" -IdentifierUris "https://www.contoso.org/example2" -Password "123456789"
+New-AzureRmADApplication : Another object with the same value for property identifierUris already exists.
+At line:1 char:23
++ ... plication = New-AzureRmADApplication -DisplayName "davidapp" -HomePag ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [New-AzureRmADApplication], Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Azure.Commands.ActiveDirectory.NewAzureADApplicationCommand
+
+PS C:\windows\system32> $azureAdApplication = New-AzureRmADApplication -DisplayName "davidapp" -HomePage "https://www.co
+ntoso.org" -IdentifierUris "https://www.contoso.org/example2" -Password "123456789"
+New-AzureRmADApplication : Another object with the same value for property identifierUris already exists.
+At line:1 char:23
++ ... plication = New-AzureRmADApplication -DisplayName "davidapp" -HomePag ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [New-AzureRmADApplication], Exception
+    + FullyQualifiedErrorId : Request_BadRequest,Microsoft.Azure.Commands.ActiveDirectory.NewAzureADApplicationCommand
+
+PS C:\windows\system32> $azureAdApplication = New-AzureRmADApplication -DisplayName "davidapp" -HomePage "https://www.co
+ntoso.org" -IdentifierUris "https://www.contoso.org/example3" -Password "123456789"
+PS C:\windows\system32> $azureAdApplication
+
+
+DisplayName             : davidapp
+ObjectId                : 38aaff01-00c5-45bc-a24e-3d24a2b168b9
+IdentifierUris          : {https://www.contoso.org/example3}
+HomePage                : https://www.contoso.org
+Type                    : Application
+ApplicationId           : 4f096d74-ae97-4415-a70a-8ebf26ad64b5
+AvailableToOtherTenants : False
+AppPermissions          :
+ReplyUrls               : {}
+
+
+
+PS C:\windows\system32> New-AzureRmADServicePrincipal -ApplicationId $azureAdApplication.ApplicationId
+
+DisplayName                    Type                           ObjectId
+-----------                    ----                           --------
+davidapp                       ServicePrincipal               13cf1532-945a-4207-8349-5d38126aee96
+
+
+PS C:\windows\system32> New-AzureRmRoleAssignment -RoleDefinitionName Contributor -ServicePrincipalName $azureAdApplicat
+ion.ApplicationId
+
+
+RoleAssignmentId   : /subscriptions/b8ea41ab-9b98-43a2-98d8-ae768be2a6f4/providers/Microsoft.Authorization/roleAssignme
+                     nts/c6e31dcc-1189-494e-bb02-f487a8a5ad81
+Scope              : /subscriptions/b8ea41ab-9b98-43a2-98d8-ae768be2a6f4
+DisplayName        : davidapp
+SignInName         :
+RoleDefinitionName : Contributor
+RoleDefinitionId   : b24988ac-6180-42a0-ab88-20f7382dd24c
+ObjectId           : 13cf1532-945a-4207-8349-5d38126aee96
+ObjectType         : ServicePrincipal
+
+
+
+PS C:\windows\system32> $tenlent_id = b8ea41ab-9b98-43a2-98d8-ae768be2a6f4
+b8ea41ab-9b98-43a2-98d8-ae768be2a6f4 : The term 'b8ea41ab-9b98-43a2-98d8-ae768be2a6f4' is not recognized as the name of
+ a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verif
+y that the path is correct and try again.
+At line:1 char:15
++ $tenlent_id = b8ea41ab-9b98-43a2-98d8-ae768be2a6f4
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (b8ea41ab-9b98-43a2-98d8-ae768be2a6f4:String) [], CommandNotFoundExcepti
+   on
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\windows\system32> $tenlent_id = "b8ea41ab-9b98-43a2-98d8-ae768be2a6f4"
+PS C:\windows\system32> $client_id = "4f096d74-ae97-4415-a70a-8ebf26ad64b5"
+PS C:\windows\system32> $client_secret = "123456789"
+PS C:\windows\system32> $auth_url = "https://login.chinacloudapi.cn/'.$tenlent_id.'/oauth2/token?api-version=1.0"
+PS C:\windows\system32> $auth = curl_init($auth_url)
+curl_init : The term 'curl_init' is not recognized as the name of a cmdlet, function, script file, or operable program.
+ Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:9
++ $auth = curl_init($auth_url)
++         ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (curl_init:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\windows\system32>
+
+
+
+
+

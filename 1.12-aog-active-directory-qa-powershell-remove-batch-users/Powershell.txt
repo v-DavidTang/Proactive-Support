@@ -1,0 +1,17 @@
+PS C:\windows\system32> $msolcred = Get-Credential
+
+cmdlet Get-Credential at command pipeline position 1
+Supply values for the following parameters:
+Credential
+PS C:\windows\system32> $msolcred
+
+UserName                                                               Password
+--------                                                               --------
+v-tawe@TESTTEST07Dec16t094151.partner.onmschina.cn System.Security.SecureString
+
+
+PS C:\windows\system32> connect-msolservice -Credential $msolcred
+PS C:\windows\system32> Get-MsolUser -All | Export-Csv C:\users.csv
+PS C:\windows\system32> Get-MsolUser -All | Export-Csv C:\users.csv
+PS C:\windows\system32> Get-MsolUser -All | Export-Csv C:\users.csv
+PS C:\windows\system32> Import-Csv C:\Users\v-tawe\Desktop\users1.csv | Remove-MsolUser -Force
